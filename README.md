@@ -1,2 +1,4 @@
 # HTP
-hows that place
+Hows That Place?!
+
+A platform to share and view reviews for geographical objects.
