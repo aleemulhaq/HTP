@@ -3,7 +3,7 @@ Main page stylesheet
 */
 /* Base look for the top menu/navigation bar*/
 .top-navigation {
-  background-color: #555;
+  background-color: rgb(68, 67, 67);
   overflow: hidden;
 }
 
@@ -15,17 +15,25 @@ Main page stylesheet
   padding: 16px 18px;
   text-decoration: none;
   font-size: 21px;
-  border-right:1px solid rgb(252, 9, 9);
+}
+
+.top-navigation a {
+	border-right:1px solid rgb(255, 255, 255);
+	padding: 15 px;
+}
+
+.top-navigation a:last-child {
+	border-right:none;
 }
 
 /*
 Denoting the page we are currently on. Pulled from the w3schools site as reference. https://www.w3schools.com/howto/howto_js_topnav.asp
 Used to show touching classes within specific elements.
 */
-.top-navigation a.active {
-	background-color: #4CAF50;
-	color: black;
-  }
+/* .top-navigation a.active {
+	/* background-color: rgb(136, 139, 136); */
+	/* color: black; */
+ /* } */
 
 /*CSS Method of handling mouse hovering*/
 .top-navigation a:hover {
@@ -33,88 +41,8 @@ Used to show touching classes within specific elements.
   color: rgb(255, 255, 255);
 }
 
-/*-----------------------------------------------------------------------------------------------------------------------------------*/
 /*Base Page Setup*/
 html, body {
 	min-height: 100%;
 	margin: 0;
 }
-
-
-/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
-.content-wrapper {
-	float: left;
-	background-color: gray;
-	width: 100%;
-	min-height: 100vh;
-	overflow: hidden;
-
-}
-
-/*
-	In row specifications we use clear to denote that nothing is to float to the left or right of it.
-*/
-.row {
-	clear: both;
-	float: left;
-	overflow: hidden;
-	width: 100%;
-}
-
-.title {
-	text-align: center;
-	width: 100%
-}
-/*---------------------------------------------------------------------------------------------------------------------------------------*/
-/*
-Columns Via Float
-Utilizies the clear set in row.
-*/
-.column {
-	float: left;
-	width: 30%;
-	padding: 0px 10px 0px 10px;
-	text-align: center;
-}
-#float-columns {
-	background-color: rgb(186, 187, 156);
-}
-
-/*---------------------------------------------------------------------------------------------------------------------------------------*/
-/*Making columns via Grid*/
-/*The wrapper for composing the grid*/
-#grid-columns {
-	display: grid;
-	grid-template-columns: auto auto auto auto; /* Making 3 resizing columns within the grid*/
-	background-color: rgb(110, 110, 89);
-	color: black;
-	width: 100%
-}
-#grid-title {
-	grid-column-start: 1;
-	grid-column-end: 5;
-}
-
-.cell{
-	text-align: center;
-}
-
-/*----------------------------------------------------------------------------------------------------------------------------------------*/
-/*Making Columns with Flexbox*/
-#flex-columns{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	background-color: rgb(166, 167, 147);
-	width: 100%;
-}
-
-.flex-col {
-	width: 30%;
-	text-align: center;
-}
-#flex-title {
-	width: 100%;
-	text-align: center;
-}
-/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
