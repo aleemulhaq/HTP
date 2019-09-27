@@ -1,15 +1,9 @@
 /* 
-This is the style sheet created for workshop 3 of CS 4WW3 of Fall term 2019.
-The style sheet will be seperated into sections as follows:
-	* Navigation Bar (Menu)
-	* Column division 
-
-Also note this workshop will not have any JS.
-
+Main page stylesheet
 */
 /* Base look for the top menu/navigation bar*/
 .top-navigation {
-  background-color: #000;
+  background-color: #555;
   overflow: hidden;
 }
 
@@ -23,19 +17,19 @@ Also note this workshop will not have any JS.
   font-size: 21px;
 }
 
-/*CSS Method of handling mouse hovering*/
-.top-navigation a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
 /*
 Denoting the page we are currently on. Pulled from the w3schools site as reference. https://www.w3schools.com/howto/howto_js_topnav.asp
 Used to show touching classes within specific elements.
 */
 .top-navigation a.active {
-  background-color: yellow;
-  color: black;
+	background-color: #4CAF50;
+	color: black;
+  }
+
+/*CSS Method of handling mouse hovering*/
+.top-navigation a:hover {
+  background-color: rgb(41, 40, 40);
+  color: rgb(255, 255, 255);
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------*/
@@ -45,6 +39,8 @@ html, body {
 	margin: 0;
 }
 
+
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
 .content-wrapper {
 	float: left;
 	background-color: gray;
@@ -80,7 +76,7 @@ Utilizies the clear set in row.
 	text-align: center;
 }
 #float-columns {
-	background-color: rgb(194, 51, 51);
+	background-color: rgb(186, 187, 156);
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
@@ -89,7 +85,7 @@ Utilizies the clear set in row.
 #grid-columns {
 	display: grid;
 	grid-template-columns: auto auto auto auto; /* Making 3 resizing columns within the grid*/
-	background-color: white; 
+	background-color: rgb(110, 110, 89);
 	color: black;
 	width: 100%
 }
@@ -108,7 +104,7 @@ Utilizies the clear set in row.
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	background-color: rgb(85, 85, 236);
+	background-color: rgb(166, 167, 147);
 	width: 100%;
 }
 
@@ -120,3 +116,4 @@ Utilizies the clear set in row.
 	width: 100%;
 	text-align: center;
 }
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
