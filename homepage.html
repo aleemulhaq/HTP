@@ -3,47 +3,51 @@
 <!-- html element is the root element of an HTML page-->
 <html>
 <!--head element contains meta info about the document -->
+
 <head>
-<!--title element specifies title for the doc -->	
-<title>HTP</title>
-<!-- <script src="https://use.fontawesome.com/bf0777e635.js"></script> -->
-<!-- add link to external css sheet(in head section of html) -->
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="homepage.css">
-<!-- Load an icon library: icons from: https://fontawesome.com/v4.7.0/icons/ -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- <script src="https://use.fontawesomef.com/bf0777e635.js"></script> -->
+    <!--title element specifies title for the doc -->
+    <title>HTP</title>
+    <!-- <script src="https://use.fontawesome.com/bf0777e635.js"></script> -->
+    <!-- add link to external css sheet(in head section of html) -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="homepage.css">
+    <!-- Load an icon library: icons from: https://fontawesome.com/v4.7.0/icons/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="https://use.fontawesomef.com/bf0777e635.js"></script> -->
 </head>
 <!--body element contains the visible page content -->
+
 <body>
+    <header class="page-header">
+        <h1>How's that place?</h1>
+    </header>
+    <!-- html links are defined with the <a> tag-->
+    <!-- id specifies a unique id for the element-->
+    <!-- href specifies the url/web-address for a link-->
+    <!-- use <i> tag for italic-->
+    <!-- for new tab, add to  href:  target="_blank"-->
+    <!-- add class="active" for selected tab-->
+    <nav class="top-navigation">
+        <a id="home" href="homepage.html"><i class="fa fa-fw fa-home"></i></a>
+        <a id="discover" href="discover.html">Discover</a>
+        <!-- target _blank opens the url in a new tab-->
+        <a id="search" href="sample-results.html"><i class="fa fa-fw fa-search"></i> Find Burger</a>
+        <a id="submit-obj" href="object-submission.html"><i class="fa fa-fw fa-pencil"></i> Submit a place</a>
+        <a style="float:right" id="reg" href="signup.html"><i class="fa fa-fw fa-user"></i> Sign Up</a>
+    </nav>
 
-	<!-- html links are defined with the <a> tag-->
-	<!-- id specifies a unique id for the element-->
-	<!-- href specifies the url/web-address for a link-->
-	<!-- use <i> tag for italic-->
-	<!-- for new tab, add to  href:  target="_blank"-->
-	<!-- add class="active" for selected tab-->
-<div class="top-navigation">
-  <a id="home" href="homepage.html"><i class="fa fa-fw fa-home"></i></a>
-  <a id="discover" href="discover.html">Discover</a>
-  <!-- target _blank opens the url in a new tab-->
-  <a id="search" href="sample-results.html"><i class="fa fa-fw fa-search"></i> Find Burger</a>
-  <a id="submit-obj" href="object-submission.html"><i class="fa fa-fw fa-pencil"></i> Submit a place</a>
-  <a style="float:right" id="reg" href="signup.html"><i class="fa fa-fw fa-user"></i> Sign Up</a>
-</div>
 
+    <!--*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= -->
+    <!-- <h1> defines the most important heading. <h6> defines the least important heading -->
+    <div class="content-wrapper row">
+        <div id="float-columns" class="row">
+            <div class="title">
+                <!-- h1 defines a large heading -->
+                <h1>Hows that place?</h1>
+                <h3> Float block columns</h3>
+            </div>
 
-<!--*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= -->
-<!-- <h1> defines the most important heading. <h6> defines the least important heading -->
-<div class="content-wrapper row">
-	<div id="float-columns" class="row">
-		<div class="title">
-			<!-- h1 defines a large heading -->
-				<h1>Hows that place?</h1>
-				<h3> Float block columns</h3>
-		</div>
-
-		<div class="column">
+            <!-- <div class="column">
 			<h2>Block Column 1</h2>
 		</div>
 
@@ -54,52 +58,66 @@
 
 		<div class="column">
 			<h2>Block Column 3</h2>
-		</div>
-	</div>
+		</div> -->
+        </div>
 
-	<div id="flex-columns" class="row">
-			<div id="flex-title" class="title">
-				<h1>Near By stuff</h1>
-				<h3>Flexbox Columns</h3>
-			</div>
-			<div class="flex-col"><h2>Flex Column 1 Row 1</h2></div>
-			<div class="flex-col"><h2>Flex Column 2 Row 1</h2></div>
-			<div class="flex-col"><h2>Flex Column 3 Row 1</h2></div>
-			<div class="flex-col"><h2>Flex Column 1 Row 2</h2></div>
-			<div class="flex-col"><h2>Flex Column 2 Row 2</h2></div>
-		</div>
+        <div id="flex-columns" class="row">
+            <div id="flex-title" class="title">
+                <h1>Near By stuff</h1>
+                <h3>Flexbox Columns</h3>
+            </div>
+            <div class="flex-col">
+                <h2>Flex Column 1 Row 1</h2>
+            </div>
+            <div class="flex-col">
+                <h2>Flex Column 2 Row 1</h2>
+            </div>
+            <div class="flex-col">
+                <h2>Flex Column 3 Row 1</h2>
+            </div>
+            <div class="flex-col">
+                <h2>Flex Column 1 Row 2</h2>
+            </div>
+            <div class="flex-col">
+                <h2>Flex Column 2 Row 2</h2>
+            </div>
+        </div>
 
-	<div id="grid-columns" class="row">
-		<div id="grid-title" class="title">
-			<h1>Grid Columns</h1>
-		</div>
-		<div class="cell">
-			<h2>Cell 1</h2>
-		</div>
-		<div class="cell">
-			<h2>Cell 2</h2>
-		</div>
-		<div class="cell">
-			<h2>Cell 3</h2>
-		</div>
-		<div class="cell">
-			<h2>Cell 4</h2>
-		</div>
-		<div class="cell">
-			<h2>Cell 5</h2>
-		</div>
-		<div class="cell">
-			<h2>Cell 6</h2>
-		</div>
-		<div class="cell">
-			<h2>Cell 7</h2>
-		</div>
-		<div class="cell">
-			<h2>Cell 8</h2>
-		</div>
-	</div>
-</div>
-<!--*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= -->
+        <div id="grid-columns" class="row">
+            <div id="grid-title" class="title">
+                <h1>Grid Columns</h1>
+            </div>
+            <div class="cell">
+                <h2>Cell 1</h2>
+            </div>
+            <div class="cell">
+                <h2>Cell 2</h2>
+            </div>
+            <div class="cell">
+                <h2>Cell 3</h2>
+            </div>
+            <div class="cell">
+                <h2>Cell 4</h2>
+            </div>
+            <div class="cell">
+                <h2>Cell 5</h2>
+            </div>
+            <div class="cell">
+                <h2>Cell 6</h2>
+            </div>
+            <div class="cell">
+                <h2>Cell 7</h2>
+            </div>
+            <div class="cell">
+                <h2>Cell 8</h2>
+            </div>
+        </div>
+    </div>
+    <!--*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= -->
 
+    <footer class="page-footer">
+        <h4>Developer: Aleem Ul Haq<br>Student#: 001330201<br>Email:haqau4@mcmaster.ca</h4>
+    </footer>
 </body>
+
 </html>
