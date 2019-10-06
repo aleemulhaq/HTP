@@ -20,33 +20,43 @@
 
 <body>
 
-    <header class="page-header">
-        <h1>How's that place?</h1>
-    </header>
-
     <!-- html links are defined with the <a> tag-->
     <!-- id specifies a unique id for the element-->
     <!-- href specifies the url/web-address for a link-->
     <!-- use <i> tag for italic-->
     <!-- for new tab, add to  href:  target="_blank"-->
     <!-- add class="active" for selected tab-->
-    <div class="top-navigation">
-        <a id="home" href="homepage.html"><i class="fa fa-fw fa-home"></i></a>
-        <a id="discover" href="discover.html">Discover</a>
-        <!-- target _blank opens the url in a new tab-->
-        <a id="search" href="sample-results.html"><i class="fa fa-fw fa-search"></i> Find Burger</a>
-        <a id="submit-obj" href="object-submission.html"><i class="fa fa-fw fa-pencil"></i> Submit a place</a>
-        <a style="float:right" id="reg" href="signup.html"><i class="fa fa-fw fa-user"></i> Sign Up</a>
-    </div>
+    <!-- html5 header tag, everything inside header goes here-->
+    <header class="header">
+        <!-- nav tag for navigation menu-->
+        <nav class="top-navigation">
+            <a id="home" href="homepage.html"><i class="fa fa-fw fa-home"></i></a>
+            <a id="discover" href="discover.html">Discover</a>
+            <!-- target _blank opens the url in a new tab-->
+            <a id="search" href="sample-results.html"><i class="fa fa-fw fa-search"></i> Find Burger</a>
+            <a id="submit-obj" href="object-submission.html"><i class="fa fa-fw fa-pencil"></i> Submit a place</a>
+            <a style="float:right" id="reg" href="signup.html"><i class="fa fa-fw fa-user"></i> Sign Up</a>
+        </nav>
+        <h1>How's that place?</h1>
+    </header>
 
     <div class="obj-header">
         <h1> Sample object coming soon</h1>
     </div>
 
 
-    <footer class="page-footer">
-        <h4>Developer: Aleem Ul Haq<br>Student#: 001330201<br>Email:haqau4@mcmaster.ca</h4>
+    <!--*=*=*=*=*=  Footer Start*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=-->
+    <!--html5 footer tag to define a page footer-->
+    <footer class="footer" id="home-footer">
+        <div class="footer-para">
+            <p>
+                Aleem Haq - 1330201
+                <!-- <a id="mail-to-aleem" href="mailto:haqau4@mcmaster.ca">By: Aleem Haq -- 1330201
+                        </a> -->
+            </p>
+        </div>
     </footer>
+    <!--*=*=*=*=*=  Footer End*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=-->
 </body>
 
 </html>

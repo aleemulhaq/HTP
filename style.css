@@ -71,13 +71,56 @@ body {
     margin: 0;
 }
 
-.page-header {
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.footer-para:hover .tooltiptext {
+    visibility: visible;
+}
+
+header {
     background-color: rgb(243, 111, 87);
     overflow: hidden;
     text-align: center;
 }
 
-.page-footer {
-    background-color: rgb(93, 104, 201);
-    padding: 1%;
+.footer-para {
+    position: relative;
+}
+
+footer {
+    display: flex;
+    background-color: rgb(243, 111, 87);
+    color: rgb(0, 0, 0);
+    padding: 1px;
+    justify-content: center
 }
