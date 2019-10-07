@@ -17,18 +17,21 @@ Main page stylesheet
     float: left;
     color: #f2f2f2;
     text-align: center;
-    padding: 1% 1%;
     text-decoration: none;
-    font-size: 110%;
+    padding: 14px 16px;
+    font-size: 17px;
 }
 
 .top-navigation a {
     border-right: 1px solid rgb(255, 255, 255);
-    padding: 1%;
 }
 
 .top-navigation a:last-child {
     border-right: none;
+}
+
+.top-navigation a:last-child {
+    float: right;
 }
 
 
@@ -63,48 +66,68 @@ Used to show touching classes within specific elements.
 }
 
 
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .top-navigation a:not(:first-child) {
+        display: none;
+    }
+    .top-navigation a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .top-navigation a:last-child {
+        float: right;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .top-navigation {
+        color: green;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .top-navigation {
+        color: blue;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .top-navigation {
+        color: orange;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .top-navigation {
+        background: rgb(68, 67, 67);
+    }
+}
+
+
 /*Base Page Setup*/
 
 html,
 body {
     min-height: 100%;
     margin: 0;
-}
-
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 150%;
-    left: 50%;
-    margin-left: -60px;
-}
-
-.tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
-}
-
-.footer-para:hover .tooltiptext {
-    visibility: visible;
+    font-family: Arial;
 }
 
 header {
