@@ -23,7 +23,7 @@ Main page stylesheet
 }
 
 .top-navigation a {
-    border-right: 1px solid rgb(255, 255, 255);
+    border-right: 1px solid #dddddd;
 }
 
 .top-navigation a:last-child {
@@ -69,9 +69,13 @@ Used to show touching classes within specific elements.
 /* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 600px) {
+    .top-navigation {
+        max-width: 100%;
+        width: auto;
+    }
     .top-navigation a.icon {
         float: right;
-        display: block;
+        display: none;
     }
 }
 
@@ -110,8 +114,8 @@ header {
 
 footer {
     display: flex;
+    justify-content: center;
     background-color: rgb(245, 139, 121);
     color: rgb(0, 0, 0);
     padding: 1px;
-    justify-content: center
 }
