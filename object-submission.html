@@ -54,14 +54,25 @@
             <div class="title">
                 <!-- h1 defines a large heading -->
                 <!-- <h3> Float block columns</h3>-->
-                <h1><a>Find a place <i class="fa fa-fw fa-search"></i></a></h1>
+                <h1><a><i class="fa fa-fw fa-pencil"></i>Submit a place</a></h1>
             </div>
             <div class="search-bar">
-                <input type="text" placeholder="Type in place to search..">
-            </div>
-            <div class="search-button">
-                <form action="sample-results.html">
-                    <input type="submit" value="Search"></i>
+                <form action="discover.html">
+                    Name of place:<br>
+                    <input type="text" name="name" maxlength="50" value="place name here.." size="75">
+                    <br>
+                    Place Description:<br>
+                    <input type="text" name="description" maxlength="500" value="brief description here..">
+                    <br>
+                    Name of place:
+                    <br>
+                    <input type="text" name="coordinates" maxlength="15" value="lat-long">
+                    <br>
+                    Upload an image:<br>
+                    <input type="file" id="myFile">
+                    <br>
+                    <input type="reset">
+                    <input type="submit" value="Submit">
                 </form>
             </div>
 

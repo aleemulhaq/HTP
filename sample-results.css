@@ -28,6 +28,17 @@
     width: 100%;
 }
 
+
+.burgerhut-map-img img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
