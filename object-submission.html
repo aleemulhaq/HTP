@@ -56,21 +56,24 @@
                 <!-- <h3> Float block columns</h3>-->
                 <h1><a><i class="fa fa-fw fa-pencil"></i>Submit a place</a></h1>
             </div>
-            <div class="search-bar">
+            <div class="submit-place-form">
                 <form action="discover.html">
-                    Name of place:<br>
-                    <input type="text" name="name" maxlength="50" value="place name here.." size="75">
+                    <b>Name of place:</b>
                     <br>
-                    Place Description:<br>
-                    <input type="text" name="description" maxlength="500" value="brief description here..">
+                    <input type="text" name="name" maxlength="50" placeholder="place name here.." size="75">
+                    <br><br>
+                    <b>Place Description:</b>
                     <br>
-                    Name of place:
+                    <textarea name="message" placeholder="brief description here.." maxlength="450" rows="10" cols="30"></textarea>
+                    <br><br>
+                    <b>Location in latitude-longitude:</b>
                     <br>
-                    <input type="text" name="coordinates" maxlength="15" value="lat-long">
+                    <input type="text" name="coordinates" maxlength="15" placeholder="lat-long">
+                    <br><br>
+                    <b>Upload an image:</b>
                     <br>
-                    Upload an image:<br>
                     <input type="file" id="myFile">
-                    <br>
+                    <br><br>
                     <input type="reset">
                     <input type="submit" value="Submit">
                 </form>
