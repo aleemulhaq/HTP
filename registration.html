@@ -7,12 +7,12 @@
 <head>
     <!--title element specifies title for the doc -->
     <meta charset="UTF-8">
-    <title>HTP Results</title>
+    <title>HTP Signup</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <script src="https://use.fontawesome.com/bf0777e635.js"></script> -->
     <!-- add link to external css sheet(in head section of html) -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="sample-results.css">
+    <link rel="stylesheet" type="text/css" href="registration.css">
     <!-- Load an icon library: icons from: https://fontawesome.com/v4.7.0/icons/ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <script src="https://use.fontawesomef.com/bf0777e635.js"></script> -->
@@ -33,13 +33,13 @@
     <header class="header">
         <!-- nav tag for navigation menu-->
         <nav class="top-navigation">
-            <a id="search-index" href="homepage.html"><i class="fa fa-fw fa-search"></i> HTP</a>
+            <a id="search-index" href="search.html"><i class="fa fa-fw fa-search"></i> HTP</a>
             <!--<a id="home" href="homepage.html"><i class="fa fa-fw fa-home"></i></a>-->
-            <a id="discover" href="discover.html">Discover</a>
+            <a id="discover" href="individual_sample.html">Discover</a>
             <!-- target _blank opens the url in a new tab-->
-            <a id="submit-obj" href="object-submission.html"><i class="fa fa-fw fa-pencil"></i> Submit</a>
-            <a id="sample-search" href="sample-results.html"><i class="fa fa-fw fa-search"></i> Example</a>
-            <a id="reg" href="signup.html"><i class="fa fa-fw fa-user"></i> Sign Up</a>
+            <a id="submit-obj" href="submission.html"><i class="fa fa-fw fa-pencil"></i> Submit</a>
+            <a id="sample-search" href="results_sample.html"><i class="fa fa-fw fa-search"></i> Example</a>
+            <a id="reg" href="registration.html"><i class="fa fa-fw fa-user"></i> Sign Up</a>
         </nav>
         <div class="header-h1">
             <h1>How's that place?</h1>
@@ -54,37 +54,32 @@
             <div class="title">
                 <!-- h1 defines a large heading -->
                 <!-- <h3> Float block columns</h3>-->
-                <h1><a>Search Results</a></h1>
+                <h1><a>Sign Up <i class="fa fa-user-plus" aria-hidden="true"></i>
+                    </a></h1>
             </div>
-            <div class="burgerhut-map-img">
-                <img src="map.jpg" alt="Map view of nearby resturants">
+            <div class="signup-form">
+                <form action="individual_sample.html" target="_self">
+                    <b>First Name:</b><br>
+                    <input type="text" name="first name" minlength="1" required maxlength="30"
+                        placeholder="first name here.." size="75">
+                    <br><br>
+                    <b>Email:</b><br>
+                    <input type="email" id="signup-email" name="email" minlength="5" required maxlength="50"
+                        placeholder="email goes here..">
+                    <br><br>
+                    <b>Password:</b><br>
+                    <input type="password" id="signup-password" name="password" minlength="8" required maxlength="30"
+                        placeholder="password here(8 to 30 chars)">
+                    <br><br>
+                    <b>Confirm Password:</b><br>
+                    <input type="password" id="signup-confirm-password" name="confirm-password" minlength="8" required
+                        maxlength="30" placeholder="confirm password here">
+                    <br><br>
+                    <input type="checkbox"><b>Subscribe to newsletter!</b><br><br>
+                    <input type="reset">
+                    <input type="submit" value="Submit"><br>
+                </form>
             </div>
-            <table id="search-results-table">
-                <tr>
-                    <th>Place Name</th>
-                    <th>Avg 5 Star Ratings</th>
-                    <th>No. of Reviews</th>
-                    <th>Distance</th>
-                </tr>
-                <tr>
-                    <td> <a href="discover.html">BurgerHut</a></td>
-                    <td>5 Stars</td>
-                    <td>11 reviews</td>
-                    <td>1.7 km</td>
-                </tr>
-                <tr>
-                    <td> <a href="discover.html">BurgerHut</a></td>
-                    <td>3.7 Stars</td>
-                    <td>21 reviews</td>
-                    <td>7.2 km</td>
-                </tr>
-                <tr>
-                    <td> <a href="discover.html">BurgerHut</a></td>
-                    <td>3.2 Stars</td>
-                    <td>113 reviews</td>
-                    <td>12.1 km</td>
-                </tr>
-            </table>
         </div>
     </div>
 
@@ -98,8 +93,6 @@
         <div class="footer-para">
             <p>
                 Aleem Haq - 1330201
-                <!-- <a id="mail-to-aleem" href="mailto:haqau4@mcmaster.ca">By: Aleem Haq - 1330201
-                    </a> -->
             </p>
         </div>
     </footer>

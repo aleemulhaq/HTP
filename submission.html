@@ -7,12 +7,12 @@
 <head>
     <!--title element specifies title for the doc -->
     <meta charset="UTF-8">
-    <title>HTP Discover</title>
+    <title>HTP Submit</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <script src="https://use.fontawesome.com/bf0777e635.js"></script> -->
     <!-- add link to external css sheet(in head section of html) -->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="discover.css">
+    <link rel="stylesheet" type="text/css" href="submission.css">
     <!-- Load an icon library: icons from: https://fontawesome.com/v4.7.0/icons/ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <script src="https://use.fontawesomef.com/bf0777e635.js"></script> -->
@@ -33,13 +33,13 @@
     <header class="header">
         <!-- nav tag for navigation menu-->
         <nav class="top-navigation">
-            <a id="search-index" href="homepage.html"><i class="fa fa-fw fa-search"></i> HTP</a>
+            <a id="search-index" href="search.html"><i class="fa fa-fw fa-search"></i> HTP</a>
             <!--<a id="home" href="homepage.html"><i class="fa fa-fw fa-home"></i></a>-->
-            <a id="discover" href="discover.html">Discover</a>
+            <a id="discover" href="individual_sample.html">Discover</a>
             <!-- target _blank opens the url in a new tab-->
-            <a id="submit-obj" href="object-submission.html"><i class="fa fa-fw fa-pencil"></i> Submit</a>
-            <a id="sample-search" href="sample-results.html"><i class="fa fa-fw fa-search"></i> Example</a>
-            <a id="reg" href="signup.html"><i class="fa fa-fw fa-user"></i> Sign Up</a>
+            <a id="submit-obj" href="submission.html"><i class="fa fa-fw fa-pencil"></i> Submit</a>
+            <a id="sample-search" href="results_sample.html"><i class="fa fa-fw fa-search"></i> Example</a>
+            <a id="reg" href="registration.html"><i class="fa fa-fw fa-user"></i> Sign Up</a>
         </nav>
         <div class="header-h1">
             <h1>How's that place?</h1>
@@ -47,34 +47,42 @@
     </header>
 
 
+    <!--*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= -->
     <!-- <h1> defines the most important heading. <h6> defines the least important heading -->
     <div class="content-wrapper row">
         <div id="float-columns" class="row">
             <div class="title">
                 <!-- h1 defines a large heading -->
                 <!-- <h3> Float block columns</h3>-->
-                <h1><a>BurgerHut <i class="fa fa-cutlery"></i></a></h1>
+                <h1><a><i class="fa fa-fw fa-pencil"></i>Submit a place</a></h1>
             </div>
-            <div class="burgerhut-img">
-                <img src="burgerhut.jpeg" alt="Burger hut street view">
-            </div>
-            <div>
-                <table id="burgerhut-table">
-                    <tr>
-                        <th>Avg 5 Star Ratings</th>
-                        <th>No. of Reviews</th>
-                        <th>Distance</th>
-                    </tr>
-                    <tr>
-                        <td>5 Stars</td>
-                        <td>11 reviews</td>
-                        <td>1.7 km</td>
-                    </tr>
-                </table>
+            <div class="submit-place-form">
+                <form action="individual_sample.html">
+                    <b>Name of place:</b>
+                    <br>
+                    <input type="text" name="name" maxlength="50" placeholder="place name here.." size="75">
+                    <br><br>
+                    <b>Place Description:</b>
+                    <br>
+                    <textarea name="message" placeholder="brief description here.." maxlength="450" rows="10"
+                        cols="30"></textarea>
+                    <br><br>
+                    <b>Location in latitude-longitude:</b>
+                    <br>
+                    <input type="text" name="coordinates" maxlength="15" placeholder="lat-long">
+                    <br><br>
+                    <b>Upload an image:</b>
+                    <br>
+                    <input type="file" id="myFile">
+                    <br><br>
+                    <input type="reset">
+                    <input type="submit" value="Submit">
+                </form>
             </div>
         </div>
     </div>
 
+    <!--*=*=*=*=*=  Footer Start*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=-->
     <!--html5 footer tag to define a page footer-->
     <footer class="footer" id="home-footer">
         <div class="footer-para">
@@ -83,7 +91,7 @@
             </p>
         </div>
     </footer>
-    
+    <!--*=*=*=*=*=  Footer End*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=-->
 </body>
 
 </html>
