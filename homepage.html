@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <script src="https://use.fontawesomef.com/bf0777e635.js"></script> -->
 </head>
+
+
 <!--body element contains the visible page content -->
 
 <body>
@@ -31,14 +33,17 @@
     <header class="header">
         <!-- nav tag for navigation menu-->
         <nav class="top-navigation">
-            <a id="home" href="homepage.html"><i class="fa fa-fw fa-home"></i></a>
+            <a id="search-index" href="homepage.html"><i class="fa fa-fw fa-search"></i> HTP</a>
+            <!--<a id="home" href="homepage.html"><i class="fa fa-fw fa-home"></i></a>-->
             <a id="discover" href="discover.html">Discover</a>
             <!-- target _blank opens the url in a new tab-->
-            <a id="search" href="sample-results.html"><i class="fa fa-fw fa-search"></i> Find Burger</a>
-            <a id="submit-obj" href="object-submission.html"><i class="fa fa-fw fa-pencil"></i> Submit a place</a>
+            <a id="submit-obj" href="object-submission.html"><i class="fa fa-fw fa-pencil"></i> Submit</a>
+            <a id="sample-search" href="sample-results.html"><i class="fa fa-fw fa-search"></i> Example</a>
             <a id="reg" href="signup.html"><i class="fa fa-fw fa-user"></i> Sign Up</a>
         </nav>
-        <h1>How's that place?</h1>
+        <div class="header-h1">
+            <h1>How's that place?</h1>
+        </div>
     </header>
 
 
@@ -48,8 +53,16 @@
         <div id="float-columns" class="row">
             <div class="title">
                 <!-- h1 defines a large heading -->
-                <h1>Float blocks</h1>
-                <h3> Float block columns</h3>
+                <!-- <h3> Float block columns</h3>-->
+                <h1><a>Find a place <i class="fa fa-fw fa-search"></i></a></h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Type in place to search..">
+            </div>
+            <div class="search-button">
+                <form action="sample-results.html">
+                    <input type="submit" value="Search"></i>
+                </form>
             </div>
 
             <!-- <div class="column">
@@ -66,73 +79,22 @@
 		</div> -->
         </div>
 
-        <div id="flex-columns" class="row">
-            <div id="flex-title" class="title">
-                <h1>Near By stuff</h1>
-                <h3>Flexbox Columns</h3>
-            </div>
-            <div class="flex-col">
-                <h2>Flex Column 1 Row 1</h2>
-            </div>
-            <div class="flex-col">
-                <h2>Flex Column 2 Row 1</h2>
-            </div>
-            <div class="flex-col">
-                <h2>Flex Column 3 Row 1</h2>
-            </div>
-            <div class="flex-col">
-                <h2>Flex Column 1 Row 2</h2>
-            </div>
-            <div class="flex-col">
-                <h2>Flex Column 2 Row 2</h2>
-            </div>
-        </div>
 
-        <div id="grid-columns" class="row">
-            <div id="grid-title" class="title">
-                <h1>Grid Columns</h1>
-            </div>
-            <div class="cell">
-                <h2>Cell 1</h2>
-            </div>
-            <div class="cell">
-                <h2>Cell 2</h2>
-            </div>
-            <div class="cell">
-                <h2>Cell 3</h2>
-            </div>
-            <div class="cell">
-                <h2>Cell 4</h2>
-            </div>
-            <div class="cell">
-                <h2>Cell 5</h2>
-            </div>
-            <div class="cell">
-                <h2>Cell 6</h2>
-            </div>
-            <div class="cell">
-                <h2>Cell 7</h2>
-            </div>
-            <div class="cell">
-                <h2>Cell 8</h2>
-            </div>
-        </div>
-    </div>
-    <!--*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= -->
+        <!--*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= -->
 
 
-    <!--*=*=*=*=*=  Footer Start*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=-->
-    <!--html5 footer tag to define a page footer-->
-    <footer class="footer" id="home-footer">
-        <div class="footer-para">
-            <p>
-                Aleem Haq - 1330201
-                <!-- <a id="mail-to-aleem" href="mailto:haqau4@mcmaster.ca">By: Aleem Haq - 1330201
+        <!--*=*=*=*=*=  Footer Start*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=-->
+        <!--html5 footer tag to define a page footer-->
+        <footer class="footer" id="home-footer">
+            <div class="footer-para">
+                <p>
+                    Aleem Haq - 1330201
+                    <!-- <a id="mail-to-aleem" href="mailto:haqau4@mcmaster.ca">By: Aleem Haq - 1330201
                     </a> -->
-            </p>
-        </div>
-    </footer>
-    <!--*=*=*=*=*=  Footer End*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=-->
+                </p>
+            </div>
+        </footer>
+        <!--*=*=*=*=*=  Footer End*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=-->
 </body>
 
 </html>

@@ -2,4 +2,113 @@
     background-color: rgb(143, 36, 36);
     color: black;
     font-size: 90%;
-  }
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*/
+
+.content-wrapper {
+    float: left;
+    background-color: gray;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+
+/*
+In row specifications we use clear to denote that nothing is to float to the left or right of it.
+*/
+
+.row {
+    clear: both;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    width: 100%;
+}
+
+.search-bar input[type=text] {
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    font-size: 17px;
+    border: none;
+    width: 50%;
+}
+
+.search-button {
+    display: flex;
+    justify-content: center;
+    padding: 6px 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 16px;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-button :hover {
+    background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+    .search-bar {
+        float: none;
+    }
+    .search-bar input[type=text],
+    .search-button button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 90%;
+        margin: 0;
+        padding: 10px;
+    }
+    .search-bar input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*
+Columns Via Float
+Utilizies the clear set in row.
+*/
+
+.column {
+    float: right;
+    width: 30%;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+}
+
+#float-columns {
+    background-color: rgb(243, 111, 87);
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------*/

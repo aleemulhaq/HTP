@@ -1,21 +1,24 @@
 <!-- !DOCTYPE html defines html5 type -->
 <!DOCTYPE html>
 <!-- html element is the root element of an HTML page-->
-<html>
+<html lang="en">
 <!--head element contains meta info about the document -->
 
 <head>
-
     <!--title element specifies title for the doc -->
-    <title>HTP</title>
+    <meta charset="UTF-8">
+    <title>HTP Results</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <script src="https://use.fontawesome.com/bf0777e635.js"></script> -->
     <!-- add link to external css sheet(in head section of html) -->
     <link rel="stylesheet" type="text/css" href="style.css">
-
+    <link rel="stylesheet" type="text/css" href="sample-results.css">
     <!-- Load an icon library: icons from: https://fontawesome.com/v4.7.0/icons/ -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <script src="https://use.fontawesomef.com/bf0777e635.js"></script> -->
 </head>
+
+
 <!--body element contains the visible page content -->
 
 <body>
@@ -30,33 +33,68 @@
     <header class="header">
         <!-- nav tag for navigation menu-->
         <nav class="top-navigation">
-            <a id="home" href="homepage.html"><i class="fa fa-fw fa-home"></i></a>
+            <a id="search-index" href="homepage.html"><i class="fa fa-fw fa-search"></i> HTP</a>
+            <!--<a id="home" href="homepage.html"><i class="fa fa-fw fa-home"></i></a>-->
             <a id="discover" href="discover.html">Discover</a>
             <!-- target _blank opens the url in a new tab-->
-            <a id="search" href="sample-results.html"><i class="fa fa-fw fa-search"></i> Find Burger</a>
-            <a id="submit-obj" href="object-submission.html"><i class="fa fa-fw fa-pencil"></i> Submit a place</a>
-            <a style="float:right" id="reg" href="signup.html"><i class="fa fa-fw fa-user"></i> Sign Up</a>
+            <a id="submit-obj" href="object-submission.html"><i class="fa fa-fw fa-pencil"></i> Submit</a>
+            <a id="sample-search" href="sample-results.html"><i class="fa fa-fw fa-search"></i> Example</a>
+            <a id="reg" href="signup.html"><i class="fa fa-fw fa-user"></i> Sign Up</a>
         </nav>
-        <h1>How's that place?</h1>
+        <div class="header-h1">
+            <h1>How's that place?</h1>
+        </div>
     </header>
 
-    <div class="sample-results-header">
-        <h1> Sample search results coming soon</h1>
-    </div>
 
+    <!--*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= -->
+    <!-- <h1> defines the most important heading. <h6> defines the least important heading -->
+    <div class="content-wrapper row">
+        <div id="float-columns" class="row">
+            <div class="title">
+                <!-- h1 defines a large heading -->
+                <!-- <h3> Float block columns</h3>-->
+                <h1><a>Find a place <i class="fa fa-fw fa-search"></i></a></h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Type in place to search..">
+            </div>
+            <div class="search-button">
+                <form action="sample-results.html">
+                    <input type="submit" value="Search"></i>
+                </form>
+            </div>
 
-    <!--*=*=*=*=*=  Footer Start*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=-->
-    <!--html5 footer tag to define a page footer-->
-    <footer class="footer" id="home-footer">
-        <div class="footer-para">
-            <p>
-                Aleem Haq - 1330201
-                <!-- <a id="mail-to-aleem" href="mailto:haqau4@mcmaster.ca">By: Aleem Haq -- 1330201
-                        </a> -->
-            </p>
+            <!-- <div class="column">
+			<h2>Block Column 1</h2>
+		</div>
+
+		<div class="column">
+			<h2>Block Column 2</h2>
+			</ul>
+		</div>
+
+		<div class="column">
+			<h2>Block Column 3</h2>
+		</div> -->
         </div>
-    </footer>
-    <!--*=*=*=*=*=  Footer End*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=-->
+
+
+        <!--*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= -->
+
+
+        <!--*=*=*=*=*=  Footer Start*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=-->
+        <!--html5 footer tag to define a page footer-->
+        <footer class="footer" id="home-footer">
+            <div class="footer-para">
+                <p>
+                    Aleem Haq - 1330201
+                    <!-- <a id="mail-to-aleem" href="mailto:haqau4@mcmaster.ca">By: Aleem Haq - 1330201
+                    </a> -->
+                </p>
+            </div>
+        </footer>
+        <!--*=*=*=*=*=  Footer End*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=-->
 </body>
 
 </html>
