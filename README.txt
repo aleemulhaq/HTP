@@ -13,7 +13,7 @@ Git username: aleemulhaq
 
 Git email: aleemulhaq@gmail.com
 
-Git Repo: https://github.com/aleemulhaq/HTP
+Git repo: https://github.com/aleemulhaq/HTP
 
 
 
